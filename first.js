@@ -12,7 +12,7 @@ form.addEventListener('submit',function(e){
         'Age' : Age ,
         'Address' : address,
     };
-    
+
     arr.push(userobj)
    for (let i = 0; i < arr.length; i++) {
     let card = document.createElement("div")
@@ -27,7 +27,7 @@ form.addEventListener('submit',function(e){
     age.innerText= `Age: ${arr[i].Age}`
     add.innerText=`Address: ${arr[i].Address }`
 
-    card.append(user,name,age,add)
+    card.append(name,age,add)
     
     display.append(card)
 
