@@ -44,7 +44,7 @@ body {
     padding : 10px;
     margin : 10px 0;
   }
-  .name{
+  .name,.user{
     font-weight: bold;
   }
   .age{

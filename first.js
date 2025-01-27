@@ -3,6 +3,7 @@ const display = document.getElementById('userinfo');
 const arr = []
 form.addEventListener('submit',function(e){
     e.preventDefault()
+    display.innerHTML=null
     let Name = document.getElementById('name').value
     let Age = document.getElementById('age').value
     let address = document.getElementById('Address').value
@@ -11,7 +12,7 @@ form.addEventListener('submit',function(e){
         'Age' : Age ,
         'Address' : address,
     };
-    display.innerHTML=null
+    
     arr.push(userobj)
    for (let i = 0; i < arr.length; i++) {
     let card = document.createElement("div")
@@ -26,7 +27,7 @@ form.addEventListener('submit',function(e){
     age.innerText= `Age: ${arr[i].Age}`
     add.innerText=`Address: ${arr[i].Address }`
 
-    card.append(name,age,add)
+    card.append(user,name,age,add)
     
     display.append(card)
 
